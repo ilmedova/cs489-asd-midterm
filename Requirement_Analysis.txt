@@ -1,0 +1,6 @@
+- Gardens management (CRUD operations)
+- Plants management (CRUD operations)
+- Additional functions
+  - get plants sorted by name
+  - get plants sorted by date
+- Everything needs to be in the console

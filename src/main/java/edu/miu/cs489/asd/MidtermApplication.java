@@ -9,6 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 
 import java.sql.Date;
 import java.util.Optional;
@@ -24,6 +25,7 @@ public class MidtermApplication {
         SpringApplication.run(MidtermApplication.class, args);
     }
 
+    @Bean
     CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
             Garden veg = gardenService.addGarden(new Garden("Vegetable Patch", 50.0)).get();
